@@ -17,6 +17,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     private List<People> persons;
 
+
     private MyRecyclerViewClickListener myRecyclerViewClickListener;
 
     public RecyclerViewAdapter(List<People> persons, MyRecyclerViewClickListener myRecyclerViewClickListener) {
