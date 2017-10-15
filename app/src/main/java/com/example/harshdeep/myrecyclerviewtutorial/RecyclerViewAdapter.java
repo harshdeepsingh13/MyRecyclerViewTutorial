@@ -17,14 +17,17 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     private List<People> persons;
 
-    public RecyclerViewAdapter(List<People> persons) {
+    private MyRecyclerViewClickListener myRecyclerViewClickListener;
+
+    public RecyclerViewAdapter(List<People> persons, MyRecyclerViewClickListener myRecyclerViewClickListener) {
         this.persons = persons;
+        this.myRecyclerViewClickListener = myRecyclerViewClickListener;
     }
 
     @Override
     public PersonViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_layout, parent, false);
-        PersonViewHolder personViewHolder = new PersonViewHolder(view);
+        PersonViewHolder personViewHolder = new PersonViewHolder(view, myRecyclerViewClickListener);
         return personViewHolder;
     }
 
@@ -44,14 +47,22 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         super.onAttachedToRecyclerView(recyclerView);
     }
 
-    public static class PersonViewHolder extends RecyclerView.ViewHolder {
-        CardView cardView;
+    public static class PersonViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        public MyRecyclerViewClickListener myRecyclerViewClickListener;
+        public CardView cardView;
         public TextView firstName, lastName;
-        public PersonViewHolder(View itemView) {
+        public PersonViewHolder(View itemView, MyRecyclerViewClickListener myRecyclerViewClickListener) {
             super(itemView);
+            this.myRecyclerViewClickListener = myRecyclerViewClickListener;
             cardView = (CardView) itemView.findViewById(R.id.cardView);
             firstName = (TextView)itemView.findViewById(R.id.firstName);
             lastName = (TextView)itemView.findViewById(R.id.lastName);
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            myRecyclerViewClickListener.onClick(v, getAdapterPosition());
         }
     }
 }
