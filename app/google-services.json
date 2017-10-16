@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "961449382849",
+    "project_id": "firebase-myrecyclerviewtutoria"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961449382849:android:f8f83d6438e227d0",
+        "android_client_info": {
+          "package_name": "com.example.harshdeep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961449382849-8epufvhpq1lsnf0nnvtstsq3f1lgsjf9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFGR3NSY1YOAwFunoNneN8U9W0RUpLt64"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961449382849:android:f895db1b12a43bce",
+        "android_client_info": {
+          "package_name": "com.example.harshdeep.myrecyclerviewtutorial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961449382849-v687js6ucul4ohb49aae9qq467k92qpk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.harshdeep.myrecyclerviewtutorial",
+            "certificate_hash": "36743b663f9e2cab1d11a8cf2b23992113bcd3b6"
+          }
+        },
+        {
+          "client_id": "961449382849-8epufvhpq1lsnf0nnvtstsq3f1lgsjf9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFGR3NSY1YOAwFunoNneN8U9W0RUpLt64"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
