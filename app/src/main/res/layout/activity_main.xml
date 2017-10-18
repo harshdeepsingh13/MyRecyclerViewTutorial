@@ -7,13 +7,9 @@
     android:layout_gravity="center"
     tools:context="com.example.harshdeep.myrecyclerviewtutorial.MainActivity">
 
-
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/signInButton"
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:background="?android:attr/selectableItemBackground"
-        android:foregroundGravity="center_vertical|center_horizontal|center"></com.google.android.gms.common.SignInButton>
+        android:id="@+id/recyclerView" />
+
 </RelativeLayout>

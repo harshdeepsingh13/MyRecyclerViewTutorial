@@ -24,12 +24,11 @@
         <activity android:name=".MainActivity" />
         <activity
             android:name=".InfoActivity"
-            android:parentActivityName=".ContactsActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".ContactsActivity"></activity>
     </application>
 
 </manifest>

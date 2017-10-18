@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">MyRecyclerViewTutorial</string>
+    <string name="app_name">My Recycler View Tutorial</string>
     <string name="signed_in_fmt">Hey</string>
 </resources>
